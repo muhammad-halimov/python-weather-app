@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="eel.js"></script>
+    <link rel="shortcut icon" type="image" href="img/weather.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Погода</title>
+</head>
+<body>
+<header>
+    <a href="main.htm" class="logo"><img src="img/weather.png" alt="" width="32" height="32"></a>
+    <ul>
+        <li><a href="main.htm">Главная</a></li>
+        <li><a href="weather.htm">Погода</a></li>
+        <li><a href="thanks.htm">Благодарность</a></li>
+    </ul>
+    <ul>
+        <li class="last"><a href="login.htm">Вход</a></li>
+    </ul>
+</header>
+<main>
+    <div class="content">
+        <h1>Посмотреть погоду</h1>
+        <input type="text" id="city" value="Москва, РФ"/>
+        <input type="radio" id="check" onclick="weather_js()" style="display: none;" />
+        <label class="check_button" for="check">Проверить</label>
+        <p id="info"></p>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li><a href="main.htm">Главная</a></li>
+        <li><a href="weather.htm">Погода</a></li>
+        <li><a href="thanks.htm">Благодарность</a></li>
+    </ul>
+</footer>
+<script type="text/javascript" src="css/script.js"></script>
+</body>
+</html>

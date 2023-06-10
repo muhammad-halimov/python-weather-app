@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <script type="text/javascript" src="eel.js"></script>
+    <link rel="shortcut icon" type="image" href="img/weather.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <form class="box" action="main.htm" method="post">
+        <h1>РЕГЕСТРАЦИЯ</h1>
+        <input type="text" id="name" placeholder="ФИО" required>
+        <input type="password" id="password" placeholder="ПАРОЛЬ" required>
+        <input type="submit" value="ВХОД">
+        <button type="button" class="back" style="text-transform:uppercase;"><a href="main.htm">Назад</a></button>
+    </form>
+
+    <script defer type="text/javascript">
+        document.querySelector('.box').addEventListener('submit', async function(event)
+        {
+            // Отменяем стандартное поведение формы
+            event.preventDefault();
+
+            var name = document.getElementById('name').value;
+            var password = document.getElementById('password').value;
+
+            localStorage.setItem('name', name);
+            localStorage.setItem('password', password);
+
+            alert("Поздравляем ! Вы зарегистрировались ! \nДанные записаны в localStorage.")
+            window.location.href = 'main.htm';
+        });
+    </script>
+</body>
+</html>
