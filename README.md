@@ -6,8 +6,6 @@ The project uses EEL & pyowm libraryes for UI and check the weather.
 
 If you don't installed this libraryes before, you can just unarchive the venv folder, it contains virtual environment for python and also libaryes, that i mentioned before.
 
-After a few moment apears a message that tells you weather !
-
 It's also has a executable (.exe) version, if you want you can use it, but it's works slowly(because of auto-py-to-exe library), but hey it's usable !
 
 Some links and comands:
